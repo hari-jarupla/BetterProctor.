@@ -1,0 +1,128 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,epsfig,,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+%\usepackage{pgfplots}
+\usepackage{mathtools}
+\usepackage{multirow}
+%\usepackage{subcaption}
+\usepackage[caption=false, font=footnotesize]{subfig}
+\usepackage{mathtools}
+\usepackage{cuted}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+\ifCLASSINFOpdf
+\else
+\fi
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+
+\title{ Human Diseases Detection Based On Deep Learning Algorithms }
+\author{Ishan Ashish Arora {(202011012)}
+	, Karan Chaudhary{(202011038)}  
+        , Prashik Katyare{(202011039)}}
+\vspace{-0.5cm}
+
+\maketitle
+
+\begin{abstract}
+Healthcare for people is one of society's most important issues. To ensure that patients receive the care they require as quickly as possible, it seeks out the best possible and reliable disease diagnosis. Medical system diagnoses are frequently used for rapid disease identification, corrective care, and risk-free treatment of established disorders. Technology is developing even as risks and problems increase. We introduce a fresh paradigm for disease detection in this paper. We will construct a deep learning model that will recover different biomedical data from dispersed and homogeneous sensors.The outcomes will demonstrate the advantages of utilising deep learning technologies in the field of artificial intelligence of medical devices to identify diseases in the process of making healthcare decisions. We will employ several deep learning architectures. One of the most challenging issues in human medicine science is the early detection of chronic disorders. In most cases, patients are not aware of the issue until their symptoms start to appear. One of the popular methods for identifying and determining these conditions and diseases, which aids doctors in making the correct diagnosis, is deep learning.
+\end{abstract}
+\cite{ijrasetDiseasePrediction}\cite{Deep-Learing-HealthCare}\cite{Machine-learning-in-healthcare-diagnosis}
+\begin{IEEEkeywords}
+Healthcare, patients,deep learning model, biomedical data, dispersed sensors, homogeneous sensors, advantages, artificial intelligence, medical devices, identify diseases, healthcare decisions, deep learning architectures, human medicine science, early detection, chronic disorders,medical system, rapid disease identification,correct diagnosis.
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction and literature review}
+\label{sec:intro}\\
+\newline The rapid advances in deep learning algorithms have had a major impact on various fields, including healthcare. Deep learning algorithms are designed to automatically learn patterns from large amounts of data, making them well suited for applications in medical image analysis and disease diagnosis. In recent years, there has been an increasing interest in using deep learning algorithms for the detection of human diseases.
+\\
+% \\In recent years, there has been a surge in research that focuses on the development of deep learning algorithms for detecting various diseases in medical images. These algorithms have shown promising results in detecting diseases such as tuberculosis, breast cancer, and diabetic retinopathy, among others. In this literature review, we will discuss the recent advances in deep learning models for disease detection and their applications in medical imaging.
+% One of the earliest and most widely used deep learning algorithms for disease detection is Convolutional Neural Networks (CNNs). CNNs are designed to extract features from images and classify them into different categories. In medical imaging, CNNs have been used to classify medical images into healthy and diseased categories, or to classify images into different disease subtypes. For example, in a study by Wang et al. (2017), a CNN was used to classify tuberculosis images into positive and negative categories based on the presence or absence of the disease. The study reported high accuracy rates in the detection of tuberculosis, making it a promising tool for disease screening.\\
+% Another popular deep learning algorithm for disease detection is Recurrent Neural Networks (RNNs). Unlike CNNs, RNNs are designed to process sequential data, making them well-suited for medical imaging data that have temporal dependencies. RNNs have been used to detect diseases such as diabetic retinopathy, which is a disease of the eye that affects patients with diabetes. In a study by Gargeya et al. (2017), an RNN was used to classify retinal images into different stages of diabetic retinopathy. The study reported high accuracy rates in the detection of diabetic retinopathy, making it a valuable tool for early disease screening.
+% \\
+% In this research paper, we aim to review the recent developments in the use of deep learning algorithms for human disease detection. We will discuss the challenges and opportunities presented by deep learning algorithms, and provide an overview of the current state of the field. We will also examine the impact of deep learning algorithms on the healthcare industry, and consider the potential for future developments in this area.
+% To provide a comprehensive overview of the field, we will cover various applications of deep learning algorithms in disease detection, including the use of deep learning algorithms in medical imaging, genomics, and electronic health records. We will also discuss the various deep learning algorithms that have been developed for disease detection, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and generative adversarial networks (GANs).
+% Moreover, we will analyze the performance of deep learning algorithms for disease detection in comparison to traditional methods and evaluate their ability to handle the complexities and uncertainties of medical data. We will also examine the ethical and legal implications of using deep learning algorithms in healthcare, including issues related to data privacy and security, bias and fairness, and accountability.\\
+
+% \\In conclusion, this research paper aims to provide a comprehensive overview of the use of deep learning algorithms for human disease detection. By highlighting the current state of the field and the challenges that must be addressed, this paper will contribute to the development of deep learning algorithms for disease detection that are reliable, accurate, and transparent. Ultimately, the use of deep learning algorithms in healthcare has the potential to revolutionize the way diseases are diagnosed and treated, leading to improved patient outcomes and a better healthcare system.
+The usage of deep learning algorithms has had a profound effect on numerous areas, including healthcare. These algorithms, designed to automatically find patterns in large data sets, are ideal for medical image analysis and disease diagnosis. In recent years, there has been growing interest in using deep learning for detecting human diseases. Convolutional Neural Networks (CNNs) are among the earliest and most commonly used deep learning algorithms for disease detection. They extract features from images and classify them into different categories. In medical imaging, they have been used to identify images of healthy and diseased patients, or to distinguish between different disease subtypes. Recurrent Neural Networks (RNNs) are another popular deep learning algorithm for disease detection, particularly suited to medical imaging data with temporal dependencies. This research paper will provide a comprehensive overview of the advancements and challenges in using deep learning algorithms for human disease detection, covering various applications in medical imaging, genomics, and electronic health records. Additionally, it will examine the performance of deep learning algorithms in comparison to traditional methods, evaluate their ability to handle medical data complexities and uncertainties, and analyze ethical and legal implications in healthcare, such as data privacy, bias and fairness, and accountability. The ultimate goal of this paper is to contribute to the development of reliable, accurate, and transparent deep learning algorithms for disease detection, which has the potential to revolutionize the healthcare system and improve patient outcomes.
+\begin{center}
+\includegraphics[width=0.5\textwidth]{pic1.jpeg}
+    \item{\footnotesize{\textbf {Figure 1} Deep Learning Models}}
+\end{center}
+\section{Related Works}
+Medical research has been utilizing deep learning techniques to make early diagnoses of various diseases. One such example is the diagnosis of Parkinson's disease using MRIs and a convolutional neural network (CNN). The CNN was trained to differentiate between healthy brains and those with Parkinson's disease. Another example is the classification of skin lesions into melanoma, basal cell carcinoma, or benign moles using a combination of CNNs and transfer learning. The study was able to improve accuracy in classifying skin lesions. In a similar vein, deep learning models have been used to diagnose Alzheimer's disease using MRI images and a deep neural network (DNN). The model was able to differentiate between healthy individuals and those with Alzheimer's disease. Another area of application is tuberculosis diagnosis from chest X-rays, which was achieved using a CNN trained to classify X-rays into either tuberculosis or normal. A study on melanoma skin cancer also used deep learning algorithms to diagnose the disease using a deep convolutional neural network (DCNN). The DCNN was trained on images of malignant and benign moles and showed high accuracy in diagnosing melanoma. Another research project aimed at the automated detection of tuberculosis from chest X-rays used deep learning algorithms to achieve high accuracy rates. These examples highlight the potential for deep learning in medical diagnosis and the development of effective algorithms for early disease detection.These are a few examples of research and projects related to human diseases detection using deep learning algorithms. The field is growing rapidly as deep learning has proven to be an effective tool in diagnosing various diseases with high accuracy.
+
+\section{Problem formulation}
+\label{PF}
+In this particular research report we are trying to develop a web application which will detect diseases/segment them into particular disease cases on the basis of a CT scan images or X-Ray scans.Further we are going to implement the model weights and then use tensorflow js to make them work on the backend of the project.The models that we are going to use in this will be the most optimised models among( ResNet50, VGG-16 and VGG-19 and one our own CNN implemntation). Then we are going to do a survey analysis of the performance of all these models on our given dataset. Finally we are going to plot graphs and diagrams to show the end-to-end accuracy on training and validation datasets.
+\section{Ist Implementation details}
+\subsection{Covid-19 Detection:}
+\label{PA:DP}
+Here we are detecting whether the patient has Covid-19 or not, using deep learning classification techniques like ResNet50,VGG-16 and VGG-19 .Apart from this we have implemented our own CNN network from scratch. The first 3 models are first pretrained on the ImageNet dataset and then we have used the downloaded weights to carry out transfer learning on our dataset.We compile the models for all 4 networks and then calculate its accuracy , precision and recall scores.
+\newline
+\subsection{Dataset:}
+Covid-19 Chest Xray Images Dataset\cite{Kaggle-Dataset}This dataset contains 125 Covid-19 positive images and 500 Covid-19 negative images.In this dataset there is a imbalance in the number of images of Covid-19 positive to Covid-19 negative, hence we will have to balance it by using data augmentation techniques.
+\newline
+\textbf{ResNet50 model:}\newline
+The train data shape is 224x224x3 pixels matrix.For training the model we have performed 50 epochs with a learning rate of 0.001 . The optimizer that we have used over here is Adam Optimizer and the loss function used is binary cross entropy. The test accuracy is 91.94 $\%$, validation accuracy is 96.83 $\%$ and finally the training accuracy is 97.73$\%$. The precision of average weighted score is 0.93. \newline
+\textbf{VGG-16 model:}\newline
+The train data shape is 224x224x3 pixels matrix.For training the model we have performed 50 epochs with a learning rate of 0.001 . The optimizer that we have used over here is Adam Optimizer and the loss function used is binary cross entropy. The test accuracy is 98.39$\%$, validation accuracy is 98.41 $\%$ and finally the training accuracy is 98.37$\%$. The precision of average weighted score is 0.98 ,recall of average weighted score is 0.98 and f1-score of average weighted score is 0.98.\newline
+\textbf{VGG-19 model:}\newline
+The train data shape is 224x224x3 pixels matrix.For training the model we have performed 50 epochs with a learning rate of 0.0001 . The optimizer that we have used over here is Adam Optimizer and the loss function used is binary cross entropy. The test accuracy is 95.16$\%$, validation accuracy is 96.83 $\%$ and finally the training accuracy is 99.78$\%$. The precision of average weighted score is 0.95 ,recal of average weighted score is 0.95 and f1-score of average weighted score is 0.95. \newline
+\textbf{CNN model:}\newline
+The train data shape is 150x150x3 pixels matrix.For training the model we have performed 100 epochs with a learning rate of 0.001 . The optimizer that we have used over here is Adam Optimizer and the loss function used is binary cross entropy. The test accuracy is 96.77 $\%$, validation accuracy is 96.88 $\%$ and finally the training accuracy is 94.87$\%$. The precision of average weighted score is 0.97 ,recall of average weighted score is 0.97 and f1-score of average weighted score is 0.97.\newline
+The image of the layers visualization is given below:
+\begin{center}
+\includegraphics[width=0.5\textwidth]{pic3.jpeg}
+    \item{\footnotesize{\textbf {Figure 3} Our Own Architecture}}
+\end{center}
+\subsection{Brain Tumor Detection:}
+\label{PA:DP}
+Here we are detecting whether the patient has Brain Tumor or not, using a keras sequential model and MobileNetV2 developed by Google .Apart from this we are trying to implement our own CNN network from scratch.The first 2 models are first pretrained on the flower images collected from googleapis.com and then we have used the downloaded weights to carry out transfer learning on our dataset.We compile the models for the above 2 networks and then calculate its accuracy , precision and recall scores.
+\newline
+\subsection{Dataset:}
+Brain MRI images Dataset\cite{Kaggle-MRI-Dataset}The dataset contains brain MRI images divided into 4 folders for each training and testing directories.Inside training directory there are 4 sub directories of glioma tumor(826 images),meningioma tumor(822 images),pituitary tumor(827 images) and no tumor(395 images).Inside testing directory there are 4 sub directories of glioma tumor(100 images),meningioma tumor(115 tumor),pituitary tumor(74 images) and no tumor(105 images).\newline
+\textbf{Keras Sequential model:}\newline
+The train data shape is 504x450x3 pixels matrix for non-tumor and 512x512x3 matrix for tumor.For training the model we have performed 5 epochs and batch size equal to 32. The optimizer that we have used over here is Adam Optimizer and the loss function used is sparse categorical cross entropy. The test accuracy is  $\%$, validation accuracy is 87.28 $\%$ and finally the training accuracy is 94.60$\%$. The precision of average weighted score is 0.93. \newline
+\textbf{MobileNetV2 model:}\newline
+The train data shape is 250x250x3 pixels matrix.For training the model we have performed 10 epochs with a learning rate of 0.0001 . The optimizer that we have used over here is Adam Optimizer and the loss function used is sparse categorical cross entropy. The test accuracy is 98.39$\%$, validation accuracy is 98.41 $\%$ and finally the training accuracy is 98.37$\%$. The precision of average weighted score is 0.98 ,recall of average weighted score is 0.98 and f1-score of average weighted score is 0.98.\newline
+
+\section{Detail 2}
+\label{SP}
+
+\section{Experimental results}
+\label{sec:ER}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graph1.png}
+    \item{\footnotesize{\textbf {Figure 4} Covid-19 model accuracies}}
+\end{center}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graph2.png}
+    \item{\footnotesize{\textbf {Figure 5} Covid-19 model precision,recall and f1-scores}}
+\end{center}
+\section{Conclusion}
+\label{Conclusion}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{ieee}
+
+\vspace{-1cm}
+\end{document}
+
+
